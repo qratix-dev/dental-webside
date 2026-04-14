@@ -34,8 +34,8 @@ function Slider({ before, after }: { before: string; after: string }) {
   return (
     <div
       ref={boxRef}
-      className="relative w-full rounded-2xl overflow-hidden select-none cursor-ew-resize"
-      style={{ aspectRatio: '4/3', boxShadow: 'var(--shadow-card)' }}
+      className="relative w-full select-none cursor-ew-resize overflow-hidden"
+      style={{ aspectRatio: '4/3', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-lg)' }}
       onMouseDown={(e) => { dragging.current = true; move(e.clientX); e.preventDefault() }}
       onMouseMove={(e) => { if (dragging.current) move(e.clientX) }}
       onMouseUp={() => { dragging.current = false }}
@@ -44,38 +44,33 @@ function Slider({ before, after }: { before: string; after: string }) {
       onTouchMove={(e) => { if (dragging.current) move(e.touches[0].clientX) }}
       onTouchEnd={() => { dragging.current = false }}
     >
-      {/* AFTER — base layer (full width) */}
+      {/* AFTER — full base layer */}
       <img
         src={after}
         alt="After"
         draggable={false}
-        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block', pointerEvents: 'none' }}
+        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', pointerEvents: 'none' }}
       />
 
-      {/* BEFORE — clipped to left portion */}
+      {/* BEFORE — clipped */}
       <div
-        style={{
-          position: 'absolute', inset: 0,
-          width: `${pct}%`,
-          overflow: 'hidden',
-          pointerEvents: 'none',
-        }}
+        style={{ position: 'absolute', inset: 0, width: `${pct}%`, overflow: 'hidden', pointerEvents: 'none' }}
       >
         <img
           src={before}
           alt="Before"
           draggable={false}
-          style={{ position: 'absolute', inset: 0, width: boxRef.current?.offsetWidth ?? 600, height: '100%', maxWidth: 'none', objectFit: 'cover', display: 'block' }}
+          style={{ position: 'absolute', inset: 0, width: boxRef.current?.offsetWidth ?? 600, height: '100%', maxWidth: 'none', objectFit: 'cover' }}
         />
       </div>
 
-      {/* Divider line */}
+      {/* Divider */}
       <div
         style={{
           position: 'absolute', top: 0, bottom: 0,
           left: `${pct}%`,
           width: 2,
-          background: 'rgba(255,255,255,0.9)',
+          background: 'rgba(255,255,255,0.85)',
           transform: 'translateX(-50%)',
           pointerEvents: 'none',
         }}
@@ -84,49 +79,46 @@ function Slider({ before, after }: { before: string; after: string }) {
         <div style={{
           position: 'absolute', top: '50%', left: '50%',
           transform: 'translate(-50%, -50%)',
-          width: 36, height: 36,
+          width: 48, height: 48,
           borderRadius: '50%',
-          background: '#fff',
-          border: '2px solid var(--gold)',
+          background: 'var(--navy)',
+          border: '2.5px solid var(--emerald)',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
-          boxShadow: '0 2px 12px rgba(0,0,0,0.18)',
+          boxShadow: '0 0 0 4px rgba(16,185,129,0.2), 0 4px 16px rgba(0,0,0,0.3)',
         }}>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M5 8H11M5 8L3 6M5 8L3 10M11 8L13 6M11 8L13 10" stroke="var(--gold)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
+            <path d="M5 8H11M5 8L3 6M5 8L3 10M11 8L13 6M11 8L13 10" stroke="var(--emerald)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </div>
+
+        {/* Vertical glow */}
+        <div style={{
+          position: 'absolute', inset: 0,
+          background: 'linear-gradient(to bottom, transparent, rgba(16,185,129,0.5), transparent)',
+          pointerEvents: 'none',
+        }} />
       </div>
 
-      {/* BEFORE label */}
+      {/* Labels */}
       <div style={{
-        position: 'absolute', top: 12, left: 12,
-        background: 'rgba(15,23,42,0.85)',
-        color: '#fff',
-        fontSize: 11,
-        fontFamily: 'DM Sans, sans-serif',
-        fontWeight: 700,
-        letterSpacing: '0.08em',
-        padding: '4px 10px',
-        borderRadius: 6,
-        pointerEvents: 'none',
-        zIndex: 10,
+        position: 'absolute', top: 14, left: 14,
+        background: 'rgba(10,22,40,0.85)', backdropFilter: 'blur(8px)',
+        color: 'rgba(255,255,255,0.8)',
+        fontSize: 10, fontFamily: 'Inter,sans-serif', fontWeight: 700,
+        letterSpacing: '0.12em', padding: '5px 12px',
+        borderRadius: 100, pointerEvents: 'none', zIndex: 10,
+        border: '1px solid rgba(255,255,255,0.12)',
       }}>
         BEFORE
       </div>
 
-      {/* AFTER label */}
       <div style={{
-        position: 'absolute', top: 12, right: 12,
-        background: 'var(--gold)',
-        color: 'var(--navy)',
-        fontSize: 11,
-        fontFamily: 'DM Sans, sans-serif',
-        fontWeight: 700,
-        letterSpacing: '0.08em',
-        padding: '4px 10px',
-        borderRadius: 6,
-        pointerEvents: 'none',
-        zIndex: 10,
+        position: 'absolute', top: 14, right: 14,
+        background: 'var(--emerald)',
+        color: 'white',
+        fontSize: 10, fontFamily: 'Inter,sans-serif', fontWeight: 700,
+        letterSpacing: '0.12em', padding: '5px 12px',
+        borderRadius: 100, pointerEvents: 'none', zIndex: 10,
       }}>
         AFTER
       </div>
@@ -138,28 +130,41 @@ export default function BeforeAfter() {
   const { t } = useLanguage()
 
   return (
-    <section id="before-after" className="py-24 lg:py-32" style={{ backgroundColor: '#FBF6E8' }}>
-      <div className="max-w-7xl mx-auto px-6">
+    <section
+      id="before-after"
+      className="py-24 lg:py-32 relative overflow-hidden"
+      style={{ background: 'var(--navy)' }}
+    >
+      {/* Background decoration */}
+      <div
+        className="absolute right-0 top-0 w-[500px] h-[500px] pointer-events-none"
+        style={{ background: 'radial-gradient(circle at top right, rgba(16,185,129,0.07) 0%, transparent 65%)' }}
+      />
+
+      <div className="relative max-w-7xl mx-auto px-6">
         <div className="text-center mb-14">
-          <SectionLabel>{t.beforeAfter.label}</SectionLabel>
-          <h2 className="text-4xl lg:text-5xl text-[var(--navy)] mb-4">
+          <SectionLabel light>{t.beforeAfter.label}</SectionLabel>
+          <h2
+            className="font-sans font-black text-white mb-4"
+            style={{ fontSize: 'clamp(2rem, 4.5vw, 3.2rem)', letterSpacing: '-0.04em', lineHeight: 1.05 }}
+          >
             {t.beforeAfter.title}{' '}
-            <em className="not-italic font-serif italic text-[var(--gold)]">{t.beforeAfter.titleGold}</em>
+            <span style={{ color: 'var(--emerald)' }}>{t.beforeAfter.titleGold}</span>
           </h2>
-          <p className="font-sans text-[var(--muted)] max-w-xl mx-auto text-base">
+          <p className="font-sans text-white/50 max-w-xl mx-auto" style={{ fontSize: '1rem' }}>
             {t.beforeAfter.subtitle}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {pairs.map((pair, i) => {
             const treatment = t.beforeAfter.treatments[i]
             return (
               <div key={pair.id}>
                 <Slider before={pair.before} after={pair.after} />
-                <div className="mt-4 text-center">
-                  <p className="font-sans font-semibold text-[var(--navy)] text-sm">{treatment?.name}</p>
-                  <p className="font-sans text-xs text-[var(--muted)] mt-1">
+                <div className="mt-5 text-center">
+                  <p className="font-sans font-bold text-white text-sm tracking-tight">{treatment?.name}</p>
+                  <p className="font-sans text-xs mt-1" style={{ color: 'var(--emerald)' }}>
                     {t.beforeAfter.durationPrefix} {treatment?.duration}
                   </p>
                 </div>

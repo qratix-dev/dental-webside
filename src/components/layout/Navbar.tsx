@@ -50,26 +50,24 @@ function TRFlag() {
 }
 
 const LANG_META: Record<Language, { name: string; flag: ReactElement }> = {
-  en: { name: 'English',  flag: <UKFlag /> },
-  de: { name: 'Deutsch',  flag: <DEFlag /> },
-  fr: { name: 'Français', flag: <FRFlag /> },
-  tr: { name: 'Türkçe',   flag: <TRFlag /> },
+  en: { name: 'EN', flag: <UKFlag /> },
+  de: { name: 'DE', flag: <DEFlag /> },
+  fr: { name: 'FR', flag: <FRFlag /> },
+  tr: { name: 'TR', flag: <TRFlag /> },
 }
 
 const LANGUAGES: Language[] = ['en', 'de', 'fr', 'tr']
 
 // ─── Language Dropdown ───────────────────────────────────────────────────────
 
-function LanguageDropdown({ scrolled, onSelect }: { scrolled: boolean; onSelect?: () => void }) {
+function LanguageDropdown({ light, onSelect }: { light?: boolean; onSelect?: () => void }) {
   const { lang, setLang } = useLanguage()
   const [open, setOpen] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     function handleClick(e: MouseEvent) {
-      if (ref.current && !ref.current.contains(e.target as Node)) {
-        setOpen(false)
-      }
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false)
     }
     document.addEventListener('mousedown', handleClick)
     return () => document.removeEventListener('mousedown', handleClick)
@@ -81,43 +79,34 @@ function LanguageDropdown({ scrolled, onSelect }: { scrolled: boolean; onSelect?
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen((v) => !v)}
-        className={`flex items-center gap-2 px-3 py-1.5 rounded-lg border transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-[var(--gold)] ${
-          scrolled
-            ? 'border-[var(--border)] text-[var(--navy)] hover:border-[var(--gold)]'
-            : 'border-white/20 text-white/90 hover:border-white/50'
+        className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border transition-all duration-200 focus-visible:outline-2 focus-visible:outline-[var(--emerald)] text-xs font-semibold tracking-wider ${
+          light
+            ? 'border-[var(--border)] text-[var(--navy)] hover:border-[var(--emerald)] bg-white/80'
+            : 'border-white/20 text-white hover:border-white/50 bg-white/10'
         }`}
       >
         <span className="flex-shrink-0 rounded-sm overflow-hidden">{current.flag}</span>
-        <span className="font-sans font-semibold text-[11px] uppercase tracking-wide">{current.name}</span>
-        <svg
-          width="10" height="10" viewBox="0 0 10 10" fill="none"
-          className={`transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
-        >
+        <span>{current.name}</span>
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" className={`transition-transform duration-200 opacity-60 ${open ? 'rotate-180' : ''}`}>
           <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full mt-2 w-36 bg-white rounded-xl shadow-[0_8px_32px_rgba(15,23,42,0.12)] border border-[var(--border)] overflow-hidden z-50">
+        <div className="absolute right-0 top-full mt-2 w-36 bg-white rounded-2xl shadow-lg border border-[var(--border)] overflow-hidden z-50" style={{ boxShadow: 'var(--shadow-lg)' }}>
           {LANGUAGES.map((l) => (
             <button
               key={l}
-              onClick={() => {
-                setLang(l)
-                setOpen(false)
-                onSelect?.()
-              }}
-              className={`w-full flex items-center gap-2.5 px-3 py-2.5 text-left transition-colors duration-150 hover:bg-[var(--bg)] ${
-                lang === l ? 'bg-[var(--bg)]' : ''
-              }`}
+              onClick={() => { setLang(l); setOpen(false); onSelect?.() }}
+              className={`w-full flex items-center gap-2.5 px-3 py-2.5 text-left transition-colors duration-150 hover:bg-[var(--bg)] ${lang === l ? 'bg-[var(--bg)]' : ''}`}
             >
               <span className="flex-shrink-0 rounded-sm overflow-hidden">{LANG_META[l].flag}</span>
-              <span className={`font-sans text-xs font-semibold ${lang === l ? 'text-[var(--gold)]' : 'text-[var(--navy)]'}`}>
+              <span className={`font-sans text-xs font-semibold ${lang === l ? 'text-[var(--emerald)]' : 'text-[var(--navy)]'}`}>
                 {LANG_META[l].name}
               </span>
               {lang === l && (
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="ml-auto flex-shrink-0">
-                  <path d="M2 6L5 9L10 3" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M2 6L5 9L10 3" stroke="var(--emerald)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               )}
             </button>
@@ -146,31 +135,19 @@ export default function Navbar() {
   ]
 
   useEffect(() => {
-    if (location.pathname !== '/') {
-      setScrolled(true)
-      return
-    }
-
-    const checkScrolled = () => {
+    if (location.pathname !== '/') { setScrolled(true); return }
+    const check = () => {
       const sentinel = document.getElementById('hero-sentinel')
-      if (!sentinel) {
-        setScrolled(window.scrollY > 10)
-        return
-      }
+      if (!sentinel) { setScrolled(window.scrollY > 10); return }
       setScrolled(sentinel.getBoundingClientRect().bottom <= 0)
     }
-
-    checkScrolled()
-    window.addEventListener('scroll', checkScrolled, { passive: true })
-    return () => window.removeEventListener('scroll', checkScrolled)
+    check()
+    window.addEventListener('scroll', check, { passive: true })
+    return () => window.removeEventListener('scroll', check)
   }, [location.pathname])
 
   useEffect(() => {
-    if (mobileOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = ''
-    }
+    document.body.style.overflow = mobileOpen ? 'hidden' : ''
     return () => { document.body.style.overflow = '' }
   }, [mobileOpen])
 
@@ -179,51 +156,74 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-          scrolled
-            ? 'backdrop-blur-xl bg-white/80 border-b border-[var(--border)] shadow-card'
-            : 'bg-transparent'
-        }`}
+        style={{
+          backdropFilter: 'blur(20px)',
+          WebkitBackdropFilter: 'blur(20px)',
+          background: scrolled
+            ? 'rgba(255,255,255,0.88)'
+            : 'rgba(10,22,40,0.25)',
+          borderBottom: scrolled
+            ? '1px solid rgba(226,232,240,0.8)'
+            : '1px solid rgba(255,255,255,0.08)',
+          boxShadow: scrolled ? 'var(--shadow-card)' : 'none',
+          transition: 'background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease',
+        }}
+        className="fixed top-0 left-0 right-0 z-40"
       >
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 lg:h-20">
+        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 lg:h-[72px]">
+
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 flex-shrink-0" onClick={() => { setMobileOpen(false); window.scrollTo(0, 0) }}>
-            <div className="w-9 h-9 rounded-full bg-[var(--gold)] flex items-center justify-center flex-shrink-0">
-              <span className="font-serif font-bold text-[var(--navy)] text-lg leading-none">D</span>
+          <Link
+            to="/"
+            className="flex items-center gap-3 flex-shrink-0"
+            onClick={() => { closeMenu(); window.scrollTo(0, 0) }}
+          >
+            {/* Monogram */}
+            <div
+              className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
+              style={{ background: 'var(--emerald)', boxShadow: '0 0 0 3px rgba(16,185,129,0.2)' }}
+            >
+              <span className="font-sans font-black text-white text-base leading-none tracking-tight">L</span>
             </div>
             <div className="flex flex-col leading-none">
               <span
-                className={`font-sans font-bold text-sm tracking-widest transition-colors duration-300 ${
-                  scrolled ? 'text-[var(--navy)]' : 'text-white'
-                }`}
+                className="font-sans font-bold text-[13px] tracking-widest transition-colors duration-300"
+                style={{ color: scrolled ? 'var(--navy)' : '#FFFFFF' }}
               >
                 LUXURY DENTAL
               </span>
-              <span className="font-sans text-[10px] tracking-[0.2em] text-[var(--gold)] font-semibold">
+              <span className="font-sans text-[9px] tracking-[0.25em] font-semibold" style={{ color: 'var(--emerald)' }}>
                 TURKEY
               </span>
             </div>
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-7">
             {navLinks.map((link) => (
               <Link
                 key={link.label}
                 to={link.href}
-                className={`font-sans font-medium text-sm transition-colors duration-200 hover:text-[var(--gold)] ${
-                  scrolled ? 'text-[var(--navy)]' : 'text-white/90'
-                }`}
+                className="relative font-sans font-medium text-[13px] transition-colors duration-200 group"
+                style={{ color: scrolled ? 'var(--navy)' : 'rgba(255,255,255,0.88)' }}
               >
                 {link.label}
+                <span
+                  className="absolute -bottom-0.5 left-0 right-0 h-px origin-center scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
+                  style={{ background: 'var(--emerald)' }}
+                />
               </Link>
             ))}
 
-            <LanguageDropdown scrolled={scrolled} />
+            <LanguageDropdown light={scrolled} />
 
             <Link
               to="/#contact"
-              className="inline-flex items-center px-5 py-2.5 rounded-md border-2 border-[var(--gold)] text-[var(--gold)] font-sans font-semibold text-sm hover:bg-[var(--gold)] hover:text-[var(--navy)] transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-[var(--gold)] focus-visible:outline-offset-2 active:scale-[0.98]"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-sans font-semibold text-[13px] text-white transition-all duration-200 hover:opacity-90 active:scale-[0.97]"
+              style={{
+                background: 'var(--emerald)',
+                boxShadow: '0 4px 16px rgba(16,185,129,0.35)',
+              }}
             >
               {t.nav.getQuote}
             </Link>
@@ -231,68 +231,71 @@ export default function Navbar() {
 
           {/* Hamburger */}
           <button
-            className="lg:hidden flex flex-col gap-1.5 p-2 focus-visible:outline-2 focus-visible:outline-[var(--gold)]"
+            className="lg:hidden relative w-10 h-10 flex flex-col items-center justify-center gap-1.5 focus-visible:outline-2 focus-visible:outline-[var(--emerald)]"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
-            <span
-              className={`block w-6 h-0.5 transition-all duration-200 ${
-                mobileOpen
-                  ? 'translate-y-2 rotate-45 bg-[var(--navy)]'
-                  : scrolled
-                  ? 'bg-[var(--navy)]'
-                  : 'bg-white'
-              }`}
-            />
-            <span
-              className={`block w-6 h-0.5 transition-all duration-200 ${
-                mobileOpen
-                  ? 'opacity-0 bg-[var(--navy)]'
-                  : scrolled
-                  ? 'bg-[var(--navy)]'
-                  : 'bg-white'
-              }`}
-            />
-            <span
-              className={`block w-6 h-0.5 transition-all duration-200 ${
-                mobileOpen
-                  ? '-translate-y-2 -rotate-45 bg-[var(--navy)]'
-                  : scrolled
-                  ? 'bg-[var(--navy)]'
-                  : 'bg-white'
-              }`}
-            />
+            {[0, 1, 2].map((i) => (
+              <span
+                key={i}
+                className="block w-6 h-0.5 rounded-full transition-all duration-300"
+                style={{
+                  background: scrolled || mobileOpen ? 'var(--navy)' : '#FFFFFF',
+                  opacity: i === 1 && mobileOpen ? 0 : 1,
+                  transform: i === 0 && mobileOpen ? 'translateY(8px) rotate(45deg)' :
+                             i === 2 && mobileOpen ? 'translateY(-8px) rotate(-45deg)' : 'none',
+                }}
+              />
+            ))}
           </button>
         </div>
       </nav>
 
       {/* Mobile Overlay */}
       <div
-        className={`fixed inset-0 z-30 bg-white flex flex-col items-center justify-center transition-opacity duration-300 ${
-          mobileOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        }`}
+        className="fixed inset-0 z-30 flex flex-col items-center justify-center transition-all duration-400"
+        style={{
+          background: 'var(--navy)',
+          opacity: mobileOpen ? 1 : 0,
+          pointerEvents: mobileOpen ? 'auto' : 'none',
+          backdropFilter: 'blur(12px)',
+        }}
       >
-        <nav className="flex flex-col items-center gap-8">
-          {navLinks.map((link) => (
+        {/* Emerald glow decoration */}
+        <div
+          className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[400px] h-[400px] rounded-full pointer-events-none"
+          style={{ background: 'radial-gradient(circle, rgba(16,185,129,0.12) 0%, transparent 70%)' }}
+        />
+
+        <nav className="relative flex flex-col items-center gap-6 z-10">
+          {navLinks.map((link, i) => (
             <Link
               key={link.label}
               to={link.href}
               onClick={closeMenu}
-              className="font-serif text-3xl font-bold text-[var(--navy)] hover:text-[var(--gold)] transition-colors duration-200"
+              className="font-sans font-bold text-3xl text-white hover:text-[var(--emerald)] transition-colors duration-200"
+              style={{
+                transform: mobileOpen ? 'translateY(0)' : 'translateY(20px)',
+                opacity: mobileOpen ? 1 : 0,
+                transition: `all 0.4s ease ${i * 0.06}s`,
+              }}
             >
               {link.label}
             </Link>
           ))}
 
-          {/* Mobile language dropdown */}
-          <div className="mt-2">
-            <LanguageDropdown scrolled={true} onSelect={closeMenu} />
+          <div className="mt-3">
+            <LanguageDropdown light onSelect={closeMenu} />
           </div>
 
           <Link
             to="/#contact"
             onClick={closeMenu}
-            className="mt-4 inline-flex items-center px-8 py-4 rounded-md border-2 border-[var(--gold)] bg-[var(--gold)] text-[var(--navy)] font-sans font-bold text-base hover:bg-[var(--gold-light)] transition-colors duration-200"
+            className="mt-4 inline-flex items-center px-10 py-4 rounded-2xl font-sans font-bold text-base text-white transition-all duration-200 hover:opacity-90 active:scale-[0.97]"
+            style={{
+              background: 'var(--emerald)',
+              boxShadow: '0 8px 32px rgba(16,185,129,0.4)',
+            }}
           >
             {t.nav.getQuote}
           </Link>
