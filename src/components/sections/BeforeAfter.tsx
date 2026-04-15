@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from 'react'
+import { useState, useRef, useCallback, useEffect } from 'react'
 import SectionLabel from '../ui/SectionLabel'
 import { useLanguage } from '../../contexts/LanguageContext'
 
@@ -31,6 +31,20 @@ function Slider({ before, after }: { before: string; after: string }) {
     setPct(Math.min(100, Math.max(0, ((clientX - left) / width) * 100)))
   }, [])
 
+  // Non-passive touchmove so we can preventDefault and stop page scroll while dragging
+  useEffect(() => {
+    const el = boxRef.current
+    if (!el) return
+    const onTouchMove = (e: TouchEvent) => {
+      if (dragging.current) {
+        e.preventDefault()
+        move(e.touches[0].clientX)
+      }
+    }
+    el.addEventListener('touchmove', onTouchMove, { passive: false })
+    return () => el.removeEventListener('touchmove', onTouchMove)
+  }, [move])
+
   return (
     <div
       ref={boxRef}
@@ -41,7 +55,6 @@ function Slider({ before, after }: { before: string; after: string }) {
       onMouseUp={() => { dragging.current = false }}
       onMouseLeave={() => { dragging.current = false }}
       onTouchStart={(e) => { dragging.current = true; move(e.touches[0].clientX) }}
-      onTouchMove={(e) => { if (dragging.current) move(e.touches[0].clientX) }}
       onTouchEnd={() => { dragging.current = false }}
     >
       {/* AFTER — full base layer */}

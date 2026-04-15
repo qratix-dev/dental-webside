@@ -64,7 +64,7 @@ export default function Footer() {
       }}
     >
       {/* Top emerald accent */}
-      <div className="h-[2px] mx-16 mb-16 rounded-full" style={{ background: 'linear-gradient(to right, transparent, var(--emerald), transparent)' }} />
+      <div className="h-[2px] mx-4 sm:mx-16 mb-16 rounded-full" style={{ background: 'linear-gradient(to right, transparent, var(--emerald), transparent)' }} />
 
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12"
@@ -76,7 +76,8 @@ export default function Footer() {
               <img
                 src="/ParisSmilesClinic-Logo.png"
                 alt="Paris Smiles Clinic"
-                className="w-10 h-10 rounded-xl object-cover flex-shrink-0"
+                className="h-11 w-auto flex-shrink-0"
+                style={{ maxWidth: 130 }}
               />
               <div className="flex flex-col leading-none">
                 <span className="font-sans font-bold text-[13px] tracking-widest text-white">PARIS SMILES</span>

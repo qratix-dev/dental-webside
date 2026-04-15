@@ -41,7 +41,7 @@ export default function Pricing() {
               <button
                 key={c}
                 onClick={() => setCurrency(c)}
-                className="px-6 py-2 rounded-xl font-sans font-semibold text-sm transition-all duration-200 focus-visible:outline-2 active:scale-[0.97]"
+                className="px-4 sm:px-6 py-2 rounded-xl font-sans font-semibold text-sm transition-colors duration-200 focus-visible:outline-2 active:scale-[0.97]"
                 style={{
                   background: currency === c ? 'var(--emerald)' : 'transparent',
                   color: currency === c ? 'white' : 'var(--muted)',

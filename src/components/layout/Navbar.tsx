@@ -79,7 +79,7 @@ function LanguageDropdown({ light, onSelect }: { light?: boolean; onSelect?: () 
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen((v) => !v)}
-        className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border transition-all duration-200 focus-visible:outline-2 focus-visible:outline-[var(--emerald)] text-xs font-semibold tracking-wider ${
+        className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-[var(--emerald)] text-xs font-semibold tracking-wider ${
           light
             ? 'border-[var(--border)] text-[var(--navy)] hover:border-[var(--emerald)] bg-white/80'
             : 'border-white/20 text-white hover:border-white/50 bg-white/10'
@@ -182,7 +182,8 @@ export default function Navbar() {
             <img
               src="/ParisSmilesClinic-Logo.png"
               alt="Paris Smiles Clinic"
-              className="w-9 h-9 rounded-xl object-cover flex-shrink-0"
+              className="h-10 w-auto flex-shrink-0"
+              style={{ maxWidth: 120 }}
             />
             <div className="flex flex-col leading-none">
               <span
