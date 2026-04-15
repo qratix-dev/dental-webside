@@ -118,7 +118,6 @@ function PartnersCarousel() {
 
 export default function Hero() {
   const contentRef = useRef<HTMLDivElement>(null)
-  const videoRef = useRef<HTMLVideoElement>(null)
   const { t } = useLanguage()
 
   useEffect(() => {
@@ -134,21 +133,6 @@ export default function Hero() {
     return () => ctx.revert()
   }, [])
 
-  // Force video play on mobile — browsers may silently block autoplay
-  useEffect(() => {
-    const video = videoRef.current
-    if (!video) return
-    video.muted = true
-    const playPromise = video.play()
-    if (playPromise !== undefined) {
-      playPromise.catch(() => {
-        // Retry on first user interaction (covers strict low-power mode on iOS)
-        const resume = () => { video.play().catch(() => {}); document.removeEventListener('touchstart', resume) }
-        document.addEventListener('touchstart', resume, { once: true })
-      })
-    }
-  }, [])
-
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
@@ -157,15 +141,9 @@ export default function Hero() {
     <section className="relative h-[100dvh] min-h-[640px] flex flex-col justify-end overflow-hidden" id="hero">
       {/* Video background */}
       <video
-        ref={videoRef}
         className="absolute inset-0 w-full h-full object-cover"
-        src="/video-Dental/sort-video-2.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        poster="/ParisSmilesClinic-Logo.png"
+        src="/video-Dental/dental-fp.mp4"
+        autoPlay muted loop playsInline
       />
 
       {/* Multi-layer gradient overlay — deep navy + slight teal tint */}
