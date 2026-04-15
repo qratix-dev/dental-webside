@@ -77,11 +77,11 @@ export default function Footer() {
                 className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
                 style={{ background: 'var(--emerald)', boxShadow: '0 0 0 3px rgba(16,185,129,0.2)' }}
               >
-                <span className="font-sans font-black text-white text-lg leading-none">L</span>
+                <span className="font-sans font-black text-white text-lg leading-none">P</span>
               </div>
               <div className="flex flex-col leading-none">
-                <span className="font-sans font-bold text-[13px] tracking-widest text-white">LUXURY DENTAL</span>
-                <span className="font-sans text-[9px] tracking-[0.25em] font-semibold" style={{ color: 'var(--emerald)' }}>TURKEY</span>
+                <span className="font-sans font-bold text-[13px] tracking-widest text-white">PARIS SMILES</span>
+                <span className="font-sans text-[9px] tracking-[0.25em] font-semibold" style={{ color: 'var(--emerald)' }}>CLINIC</span>
               </div>
             </div>
             <p className="text-white/50 font-sans text-sm leading-relaxed mb-6">{t.footer.tagline}</p>

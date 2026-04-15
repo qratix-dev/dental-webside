@@ -42,7 +42,7 @@ const socialLinks = [
   },
   {
     name: 'Facebook',
-    handle: 'Luxury Dental Turkey',
+    handle: 'Paris Smiles Clinic',
     href: '#',
     color: '#1877F2',
     icon: (
@@ -64,7 +64,7 @@ const socialLinks = [
   },
   {
     name: 'YouTube',
-    handle: 'Luxury Dental Turkey',
+    handle: 'Paris Smiles Clinic',
     href: '#',
     color: '#FF0000',
     icon: (
@@ -391,7 +391,7 @@ export default function Contact() {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.6766338694!2d30.71137!3d36.88697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDUzJzEzLjEiTiAzMMKwNDInNDguMCJF!5e0!3m2!1sen!2str!4v1710000000000!5m2!1sen!2str"
               width="100%" height="420" style={{ border: 0, display: 'block' }}
               allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
-              title="Luxury Dental Turkey Location"
+              title="Paris Smiles Clinic Location"
             />
           </div>
         </div>

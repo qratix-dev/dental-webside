@@ -14,7 +14,7 @@ export const blogTranslations: Partial<Record<Language, Record<string, BlogPostT
       body: `
 ## Warum die Türkei zur Zahntourismus-Hauptstadt der Welt geworden ist
 
-In den letzten zehn Jahren hat sich die Türkei als globaler Marktführer im Zahntourismus etabliert. Jedes Jahr reisen Hunderttausende Patienten aus Deutschland, dem Vereinigten Königreich und ganz Europa nach Antalya, Istanbul und Izmir, um hochwertige Zahnbehandlungen zu einem Bruchteil der heimischen Kosten zu erhalten. In der Luxury Dental Turkey in Antalya behandeln wir Patienten aus über 30 Ländern — und Zahnimplantate bleiben unser am häufigsten angefragter Eingriff.
+In den letzten zehn Jahren hat sich die Türkei als globaler Marktführer im Zahntourismus etabliert. Jedes Jahr reisen Hunderttausende Patienten aus Deutschland, dem Vereinigten Königreich und ganz Europa nach Antalya, Istanbul und Izmir, um hochwertige Zahnbehandlungen zu einem Bruchteil der heimischen Kosten zu erhalten. In der Paris Smiles Clinic in Antalya behandeln wir Patienten aus über 30 Ländern — und Zahnimplantate bleiben unser am häufigsten angefragter Eingriff.
 
 Was macht die Türkei zu einem so überzeugenden Ziel für Implantatbehandlungen? Die Antwort liegt in einer Kombination aus Faktoren: hochqualifizierte Zahnspezialisten, modernste Kliniken mit denselben Premium-Implantatmarken wie in deutschen Praxen, deutlich niedrigere Betriebskosten und eine blühende Tourismusinfrastruktur, die das gesamte Erlebnis angenehm gestaltet.
 
@@ -30,7 +30,7 @@ Implantate gelten als Goldstandard für Zahnersatz, weil sie:
 
 ## Die von uns verwendeten Implantatmarken
 
-Bei Luxury Dental Turkey verwenden wir ausschließlich Premium-Implantatsysteme von international anerkannten Herstellern. Wir machen bei den Komponenten keine Kompromisse. Unsere verfügbaren Systeme umfassen:
+Bei Paris Smiles Clinic verwenden wir ausschließlich Premium-Implantatsysteme von international anerkannten Herstellern. Wir machen bei den Komponenten keine Kompromisse. Unsere verfügbaren Systeme umfassen:
 
 **Osstem®** — Eines der weltweit meistgenutzten Implantatsysteme, entwickelt in Südkorea und durch umfangreiche klinische Forschung unterstützt. Ab £435 inklusive Abutment.
 
@@ -58,7 +58,7 @@ Sobald das Implantat vollständig eingewachsen ist, nehmen wir Abdrücke (oder d
 
 ## All-on-4: Vollständige Bogenrestaurierung
 
-Für Patienten, die die meisten oder alle Zähne verloren haben, bietet das All-on-4-Protokoll eine vollständige Bogenrestaurierung mit nur vier strategisch platzierten Implantaten. Bei Luxury Dental Turkey bieten wir an:
+Für Patienten, die die meisten oder alle Zähne verloren haben, bietet das All-on-4-Protokoll eine vollständige Bogenrestaurierung mit nur vier strategisch platzierten Implantaten. Bei Paris Smiles Clinic bieten wir an:
 
 - **All-on-4 Beide Kiefer Zirkon-Porzellan (24 Einheiten):** £8.680
 - **All-on-4 Beide Kiefer Metallkeramik (24 Einheiten):** £7.080
@@ -92,7 +92,7 @@ Buchen Sie eine kostenlose Online-Beratung mit Dr. Abdullah Fida oder Dr. Hatice
       body: `
 ## Die häufigste Frage in der ästhetischen Zahnheilkunde
 
-Wenn Patienten Luxury Dental Turkey für ein Smile-Makeover besuchen, ist eine der häufigsten Fragen, die ich höre: "Soll ich Veneers oder Kronen bekommen?" Es ist eine großartige Frage, und die Antwort hängt vollständig von dem Zustand Ihrer vorhandenen Zähne, Ihren ästhetischen Zielen und der gesuchten Langlebigkeit ab.
+Wenn Patienten Paris Smiles Clinic für ein Smile-Makeover besuchen, ist eine der häufigsten Fragen, die ich höre: "Soll ich Veneers oder Kronen bekommen?" Es ist eine großartige Frage, und die Antwort hängt vollständig von dem Zustand Ihrer vorhandenen Zähne, Ihren ästhetischen Zielen und der gesuchten Langlebigkeit ab.
 
 Lassen Sie uns beide Behandlungen klar aufschlüsseln, damit Sie eine fundierte Entscheidung treffen können.
 
@@ -107,7 +107,7 @@ Ein Veneer ist eine dünne Schale — typischerweise 0,5 bis 0,7 mm dick — aus
 - Leichte Fehlstellung oder Lücken zwischen Zähnen
 - Zähne, die von Natur aus klein oder ungleichmäßig sind
 
-**Unsere Veneer-Optionen bei Luxury Dental Turkey:**
+**Unsere Veneer-Optionen bei Paris Smiles Clinic:**
 - **E.MAX® Laminat-Veneer (£240):** Die Premium-Wahl. E.max ist eine gepresste Keramik mit außergewöhnlicher Lichtdurchlässigkeit und Festigkeit, die das natürliche Erscheinungsbild von Zahnschmelz nachahmt.
 - **LD Premium Non-Prep Lumineer (£300):** Ultradünne Veneers, die wenig bis gar keine Schmelzentfernung erfordern — eine wirklich reversible Option für geeignete Kandidaten.
 
@@ -122,7 +122,7 @@ Eine Krone (auch Zahnkappe genannt) ist eine vollständige Verkleidung, die den 
 - Zähne mit großen vorhandenen Füllungen
 - Den Schutz eines Zahnimplantats (als Implantat-Krone)
 
-**Unsere Kronen-Optionen bei Luxury Dental Turkey:**
+**Unsere Kronen-Optionen bei Paris Smiles Clinic:**
 - **Zirkon-Porzellan-Krone (£170):** Unsere beliebteste Wahl. Zirkoniumdioxid ist unglaublich stark, vollständig metallfrei und erzeugt ein schönes, natürliches Ergebnis.
 - **E.MAX® Krone (£240):** Am besten für Frontzähne, wo maximale Ästhetik gefragt ist. Außergewöhnliche Lichtdurchlässigkeit verleiht ein lebensechtes Erscheinungsbild.
 - **Metallkeramik-Krone (£140):** Eine erschwinglichere Option, die dennoch langlebig und funktional ist.
@@ -139,7 +139,7 @@ Eine Krone (auch Zahnkappe genannt) ist eine vollständige Verkleidung, die den 
 
 ## Wenn Sie beides benötigen
 
-In vielen Smile-Makeover-Fällen verwenden wir eine Kombination aus Veneers und Kronen. Zum Beispiel könnte ein Patient sechs Frontzähne mit E.MAX-Veneers für Ästhetik behandeln lassen, während zwei Seitenzähne mit großen Füllungen Zirkonkronen für den Schutz erhalten. Jeder Behandlungsplan bei Luxury Dental Turkey ist maßgeschneidert — wir verfolgen niemals einen Einheitslösungsansatz.
+In vielen Smile-Makeover-Fällen verwenden wir eine Kombination aus Veneers und Kronen. Zum Beispiel könnte ein Patient sechs Frontzähne mit E.MAX-Veneers für Ästhetik behandeln lassen, während zwei Seitenzähne mit großen Füllungen Zirkonkronen für den Schutz erhalten. Jeder Behandlungsplan bei Paris Smiles Clinic ist maßgeschneidert — wir verfolgen niemals einen Einheitslösungsansatz.
 
 ## Die "Full Veneer"-Krone
 
@@ -174,7 +174,7 @@ Professionelles Zahnbleaching verwendet Wasserstoffperoxid oder Carbamidperoxid 
 
 Die Oxidationsreaktion bricht die chemischen Bindungen auf, die diese Chromophore zusammenhalten. Wenn diese Bindungen brechen, werden die Moleküle kleiner und ihre lichtabsorbierenden Eigenschaften ändern sich, sodass sie farblos erscheinen. Das Ergebnis sind sichtbar weißere, hellere Zähne — von innen nach außen.
 
-## Laser-Zahnbleaching bei Luxury Dental Turkey
+## Laser-Zahnbleaching bei Paris Smiles Clinic
 
 Unsere Klinik-Laser-Bleaching-Behandlung (£250) erzielt dramatische Ergebnisse in einem einzigen Termin von etwa 60–90 Minuten. So läuft es genau ab:
 
@@ -235,7 +235,7 @@ Vergleichen wir reale Behandlungskosten. Alle deutschen Preise basieren auf repr
 
 ### Einzelnes Zahnimplantat
 
-| | Deutschland Privat | Luxury Dental Turkey |
+| | Deutschland Privat | Paris Smiles Clinic |
 |---|---|---|
 | Osstem® Implantat + Abutment + Zirkon-Krone | ~£2.800 | £435 + £170 = £605 |
 | Nobel® Implantat + Abutment + Zirkon-Krone | ~£3.200 | £549 + £170 = £719 |
@@ -245,7 +245,7 @@ Vergleichen wir reale Behandlungskosten. Alle deutschen Preise basieren auf repr
 
 ### Smile-Makeover (10 Veneers)
 
-| | Deutschland Privat | Luxury Dental Turkey |
+| | Deutschland Privat | Paris Smiles Clinic |
 |---|---|---|
 | E.MAX® Laminat-Veneers × 10 | ~£10.000 | £2.400 |
 | Zirkon-Kronen × 10 | ~£6.500 | £1.700 |
@@ -254,7 +254,7 @@ Vergleichen wir reale Behandlungskosten. Alle deutschen Preise basieren auf repr
 
 ### Vollbogen-Restaurierung (All-on-4)
 
-| | Deutschland Privat | Luxury Dental Turkey |
+| | Deutschland Privat | Paris Smiles Clinic |
 |---|---|---|
 | All-on-4 Beide Kiefer (Zirkon) | ~£28.000–£40.000 | £8.680 |
 
@@ -308,7 +308,7 @@ Um ein personalisiertes Angebot zu erhalten, kontaktieren Sie uns einfach mit Ih
       body: `
 ## Pourquoi la Turquie est devenue la capitale mondiale du tourisme dentaire
 
-Au cours des dix dernières années, la Turquie s'est imposée comme un leader mondial du tourisme dentaire. Chaque année, des centaines de milliers de patients venant du Royaume-Uni, d'Allemagne et de toute l'Europe se rendent à Antalya, Istanbul et Izmir pour des soins dentaires de haute qualité à une fraction du coût pratiqué dans leur pays. À Luxury Dental Turkey à Antalya, nous traitons des patients de plus de 30 pays — et les implants dentaires restent notre intervention la plus demandée.
+Au cours des dix dernières années, la Turquie s'est imposée comme un leader mondial du tourisme dentaire. Chaque année, des centaines de milliers de patients venant du Royaume-Uni, d'Allemagne et de toute l'Europe se rendent à Antalya, Istanbul et Izmir pour des soins dentaires de haute qualité à une fraction du coût pratiqué dans leur pays. À Paris Smiles Clinic à Antalya, nous traitons des patients de plus de 30 pays — et les implants dentaires restent notre intervention la plus demandée.
 
 Qu'est-ce qui fait de la Turquie une destination si convaincante pour les traitements implantaires ? La réponse réside dans une combinaison de facteurs : des spécialistes dentaires hautement qualifiés, des cliniques ultramodernes utilisant les mêmes marques d'implants premium que les cabinets européens, des coûts de fonctionnement nettement inférieurs et une infrastructure touristique florissante.
 
@@ -324,7 +324,7 @@ Les implants sont considérés comme la référence absolue pour le remplacement
 
 ## Les marques d'implants que nous utilisons
 
-Chez Luxury Dental Turkey, nous n'utilisons que des systèmes d'implants premium de marques internationalement reconnues. Nos systèmes disponibles comprennent :
+Chez Paris Smiles Clinic, nous n'utilisons que des systèmes d'implants premium de marques internationalement reconnues. Nos systèmes disponibles comprennent :
 
 **Osstem®** — L'un des systèmes d'implants les plus utilisés au monde, développé en Corée du Sud. À partir de £435 abutment inclus.
 
@@ -384,7 +384,7 @@ Réservez une consultation en ligne gratuite avec le Dr. Abdullah Fida ou le Dr.
       body: `
 ## La question la plus fréquente en dentisterie esthétique
 
-Lorsque des patients visitent Luxury Dental Turkey pour une transformation du sourire, l'une des questions les plus fréquentes que j'entends est : "Devrais-je opter pour des facettes ou des couronnes ?" C'est une excellente question, et la réponse dépend entièrement de l'état de vos dents existantes, de vos objectifs esthétiques et de la durabilité que vous recherchez.
+Lorsque des patients visitent Paris Smiles Clinic pour une transformation du sourire, l'une des questions les plus fréquentes que j'entends est : "Devrais-je opter pour des facettes ou des couronnes ?" C'est une excellente question, et la réponse dépend entièrement de l'état de vos dents existantes, de vos objectifs esthétiques et de la durabilité que vous recherchez.
 
 Décomposons clairement les deux traitements pour que vous puissiez prendre une décision éclairée.
 
@@ -399,7 +399,7 @@ Une facette est une fine coquille — typiquement de 0,5 à 0,7 mm d'épaisseur 
 - Un léger mauvais alignement ou des espaces entre les dents
 - Les dents naturellement petites ou inégales
 
-**Nos options de facettes chez Luxury Dental Turkey :**
+**Nos options de facettes chez Paris Smiles Clinic :**
 - **Facette E.MAX® Laminate (£240) :** Le choix premium. L'E.max est une céramique pressée avec une translucidité et une résistance exceptionnelles, imitant étroitement l'apparence de l'émail naturel.
 - **LD Premium Lumineer Non-Prep (£300) :** Des facettes ultra-fines nécessitant peu ou pas de retrait d'émail — une option véritablement réversible pour les candidats appropriés.
 
@@ -414,7 +414,7 @@ Une couronne (également appelée chapeau) est un revêtement complet qui encaps
 - Les dents avec de grands obturations existantes
 - La protection d'un implant dentaire
 
-**Nos options de couronnes chez Luxury Dental Turkey :**
+**Nos options de couronnes chez Paris Smiles Clinic :**
 - **Couronne Zircone Porcelaine (£170) :** Notre choix le plus populaire. La zircone est incroyablement solide, totalement sans métal et produit un beau résultat naturel.
 - **Couronne E.MAX® (£240) :** Idéale pour les dents antérieures où une esthétique maximale est requise.
 - **Couronne Céramométallique (£140) :** Une option plus abordable, toujours durable et fonctionnelle.
@@ -462,7 +462,7 @@ Le blanchiment dentaire professionnel utilise le peroxyde d'hydrogène ou le per
 
 La réaction d'oxydation rompt les liaisons chimiques qui maintiennent ces chromophores ensemble. Lorsque ces liaisons se rompent, les molécules deviennent plus petites et leurs propriétés d'absorption de la lumière changent, les rendant incolores. Le résultat est des dents visiblement plus blanches et plus brillantes — de l'intérieur vers l'extérieur.
 
-## Blanchiment au laser chez Luxury Dental Turkey
+## Blanchiment au laser chez Paris Smiles Clinic
 
 Notre traitement de blanchiment au laser en clinique (£250) obtient des résultats spectaculaires en un seul rendez-vous d'environ 60 à 90 minutes. Voici exactement ce qui se passe :
 
@@ -521,7 +521,7 @@ C'est pourquoi, chaque année, plus de 300.000 patients européens voyagent à l
 
 ### Implant dentaire unique
 
-| | France Privé | Luxury Dental Turkey |
+| | France Privé | Paris Smiles Clinic |
 |---|---|---|
 | Osstem® Implant + Abutment + Couronne Zircone | ~£2.800 | £435 + £170 = £605 |
 | Nobel® Implant + Abutment + Couronne Zircone | ~£3.200 | £549 + £170 = £719 |
@@ -531,7 +531,7 @@ C'est pourquoi, chaque année, plus de 300.000 patients européens voyagent à l
 
 ### Transformation du sourire (10 facettes)
 
-| | France Privé | Luxury Dental Turkey |
+| | France Privé | Paris Smiles Clinic |
 |---|---|---|
 | Facettes E.MAX® Laminate × 10 | ~£10.000 | £2.400 |
 | Couronnes Zircone × 10 | ~£6.500 | £1.700 |
@@ -540,7 +540,7 @@ C'est pourquoi, chaque année, plus de 300.000 patients européens voyagent à l
 
 ### Restauration d'arcade complète (All-on-4)
 
-| | France Privé | Luxury Dental Turkey |
+| | France Privé | Paris Smiles Clinic |
 |---|---|---|
 | All-on-4 Deux Mâchoires (Zircone) | ~£28.000–£40.000 | £8.680 |
 
@@ -590,7 +590,7 @@ Pour obtenir un devis personnalisé, contactez-nous avec votre historique dentai
       body: `
 ## Türkiye Neden Dünyanın Diş Turizmi Başkenti Oldu?
 
-Son on yılda Türkiye, diş turizminde küresel bir lider konumuna gelmiştir. Her yıl İngiltere, Almanya ve tüm Avrupa'dan yüz binlerce hasta, yüksek kaliteli diş tedavisi için ülkelerinde ödeyecekleri ücretin çok küçük bir bölümüne Antalya, İstanbul ve İzmir'e gelmektedir. Antalya'daki Luxury Dental Turkey'de, 30'dan fazla ülkeden hasta tedavi ediyoruz — ve diş implantları en çok talep edilen prosedürümüz olmaya devam ediyor.
+Son on yılda Türkiye, diş turizminde küresel bir lider konumuna gelmiştir. Her yıl İngiltere, Almanya ve tüm Avrupa'dan yüz binlerce hasta, yüksek kaliteli diş tedavisi için ülkelerinde ödeyecekleri ücretin çok küçük bir bölümüne Antalya, İstanbul ve İzmir'e gelmektedir. Antalya'daki Paris Smiles Clinic'de, 30'dan fazla ülkeden hasta tedavi ediyoruz — ve diş implantları en çok talep edilen prosedürümüz olmaya devam ediyor.
 
 Türkiye'yi implant tedavisi için bu kadar cazip bir destinasyon yapan nedir? Cevap birkaç faktörün kombinasyonunda yatıyor: yüksek eğitimli diş uzmanları, Avrupa'daki muayenehanelerle aynı premium implant markalarını kullanan son teknoloji klinikler, önemli ölçüde düşük işletme maliyetleri ve deneyimi konforlu hale getiren gelişmiş turizm altyapısı.
 
@@ -606,7 +606,7 @@ Diş implantı, yapay bir diş kökü işlevi görmek üzere cerrahi olarak çen
 
 ## Kullandığımız İmplant Markaları
 
-Luxury Dental Turkey'de yalnızca uluslararası alanda tanınan premium implant sistemleri kullanıyoruz. Mevcut sistemlerimiz şunlardır:
+Paris Smiles Clinic'de yalnızca uluslararası alanda tanınan premium implant sistemleri kullanıyoruz. Mevcut sistemlerimiz şunlardır:
 
 **Osstem®** — Güney Kore'de geliştirilen ve kapsamlı klinik araştırmalarla desteklenen, dünyanın en yaygın kullanılan implant sistemlerinden biri. Abutment dahil £435'dan başlayan fiyatlarla.
 
@@ -668,7 +668,7 @@ Dr. Abdullah Fida veya Dr. Hatice Gül Dal ile ücretsiz çevrimiçi konsültasy
       body: `
 ## Estetik Diş Hekimliğindeki En Sık Sorulan Soru
 
-Hastalar gülüş tasarımı için Luxury Dental Turkey'e geldiğinde en sık duyduğum sorulardan biri şudur: "Veneer mi yoksa kron mu yaptırmalıyım?" Bu harika bir sorudur ve cevap tamamen mevcut dişlerinizin durumuna, estetik hedeflerinize ve aradığınız uzun ömürlülüğe bağlıdır.
+Hastalar gülüş tasarımı için Paris Smiles Clinic'e geldiğinde en sık duyduğum sorulardan biri şudur: "Veneer mi yoksa kron mu yaptırmalıyım?" Bu harika bir sorudur ve cevap tamamen mevcut dişlerinizin durumuna, estetik hedeflerinize ve aradığınız uzun ömürlülüğe bağlıdır.
 
 Bilinçli bir karar verebilmeniz için her iki tedaviyi de açıkça ele alalım.
 
@@ -683,7 +683,7 @@ Veneer, bir dişin ön yüzeyine yapıştırılan, genellikle 0,5-0,7 mm kalınl
 - Hafif çapraşıklık veya dişler arası boşluklar
 - Doğal olarak küçük veya düzensiz dişler
 
-**Luxury Dental Turkey'deki veneer seçeneklerimiz:**
+**Paris Smiles Clinic'deki veneer seçeneklerimiz:**
 - **E.MAX® Laminat Veneer (£240):** Premium seçenek. E.max, doğal minenin görünümünü yakından taklit eden olağanüstü translüsensi ve dayanıklılığa sahip preslenmiş bir seramiktir.
 - **LD Premium Non-Prep Lumineer (£300):** Çok az veya hiç mine kaldırmayı gerektirmeyen ultra ince veneerler — uygun adaylar için gerçekten geri dönüşümlü bir seçenek.
 
@@ -698,7 +698,7 @@ Kron (diş kıyafeti olarak da bilinir), bir dişin diş etinden itibaren tüm g
 - Büyük dolgusu olan dişler
 - Diş implantının korunması
 
-**Luxury Dental Turkey'deki kron seçeneklerimiz:**
+**Paris Smiles Clinic'deki kron seçeneklerimiz:**
 - **Zirkonyum Porselen Kron (£170):** En popüler seçimimiz. Zirkonyum inanılmaz derecede sağlam, tamamen metalsiz ve güzel, doğal bir sonuç üretir.
 - **E.MAX® Kron (£240):** Maksimum estetiğin gerektiği ön dişler için en iyi seçenek. Olağanüstü ışık geçirgenliği gerçekçi bir görünüm sağlar.
 - **Metal Fused Porselen Kron (£140):** Daha uygun fiyatlı, yine de dayanıklı ve işlevsel bir seçenek.
@@ -721,7 +721,7 @@ Birçok gülüş dönüşümü vakasında veneer ve kronların kombinasyonunu ku
 
 Birçok hasta tam bir gülüş dönüşümü için özellikle bize geliyor — medyanın "Hollywood Smile" dediği şey. Bu tipik olarak üst ve alt ön dişlerde 8-10 hatta 16-20 veneer ve/veya kron içerir, bazen diş beyazlatma ve diş eti şekillendirme ile birleştirilir.
 
-Luxury Dental Turkey'de bunu tam bir tasarım projesi olarak ele alıyoruz: tek bir dişe dokunulmadan önce yeni gülüşünüz dijital ortamda planlanıyor.
+Paris Smiles Clinic'de bunu tam bir tasarım projesi olarak ele alıyoruz: tek bir dişe dokunulmadan önce yeni gülüşünüz dijital ortamda planlanıyor.
 
 ## Kararınızı Vermek
 
@@ -748,7 +748,7 @@ Profesyonel diş beyazlatma, aktif beyazlatma maddesi olarak hidrojen peroksit v
 
 Oksidasyon reaksiyonu bu kromoforları bir arada tutan kimyasal bağları kırar. Bu bağlar kırıldığında moleküller küçülür ve ışık emici özellikleri değişerek renksiz görünmelerini sağlar. Sonuç, içeriden dışarıya doğru gözle görülür şekilde daha beyaz, daha parlak dişlerdir.
 
-## Luxury Dental Turkey'de Lazer Diş Beyazlatma
+## Paris Smiles Clinic'de Lazer Diş Beyazlatma
 
 Kliniğimizin lazer beyazlatma tedavisi (£250), yaklaşık 60-90 dakikalık tek bir seansta çarpıcı sonuçlar elde eder. İşte tam olarak yaşananlar:
 
@@ -807,7 +807,7 @@ Bu nedenle her yıl 300.000'den fazla İngiliz hasta yurt dışında diş tedavi
 
 ### Tek Diş İmplantı
 
-| | İngiltere Özel | Luxury Dental Turkey |
+| | İngiltere Özel | Paris Smiles Clinic |
 |---|---|---|
 | Osstem® İmplant + Abutment + Zirkonyum Kron | ~£2.800 | £435 + £170 = £605 |
 | Nobel® İmplant + Abutment + Zirkonyum Kron | ~£3.200 | £549 + £170 = £719 |
@@ -817,7 +817,7 @@ Bu nedenle her yıl 300.000'den fazla İngiliz hasta yurt dışında diş tedavi
 
 ### Gülüş Dönüşümü (10 Veneer)
 
-| | İngiltere Özel | Luxury Dental Turkey |
+| | İngiltere Özel | Paris Smiles Clinic |
 |---|---|---|
 | E.MAX® Laminat Veneer × 10 | ~£10.000 | £2.400 |
 | Zirkonyum Kron × 10 | ~£6.500 | £1.700 |
@@ -826,7 +826,7 @@ Bu nedenle her yıl 300.000'den fazla İngiliz hasta yurt dışında diş tedavi
 
 ### Tam Ark Restorasyonu (All-on-4)
 
-| | İngiltere Özel | Luxury Dental Turkey |
+| | İngiltere Özel | Paris Smiles Clinic |
 |---|---|---|
 | All-on-4 Her İki Çene (Zirkonyum) | ~£28.000–£40.000 | £8.680 |
 

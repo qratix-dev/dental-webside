@@ -27,7 +27,7 @@ export const blogPosts: BlogPost[] = [
     body: `
 ## Why Turkey Has Become the World's Dental Capital
 
-Over the past decade, Turkey has established itself as a global leader in dental tourism. Each year, hundreds of thousands of patients from the UK, Germany, and across Europe travel to Antalya, Istanbul, and Izmir for high-quality dental treatment at a fraction of the cost they would pay at home. At Luxury Dental Turkey in Antalya, we treat patients from over 30 countries — and dental implants remain our most requested procedure.
+Over the past decade, Turkey has established itself as a global leader in dental tourism. Each year, hundreds of thousands of patients from the UK, Germany, and across Europe travel to Antalya, Istanbul, and Izmir for high-quality dental treatment at a fraction of the cost they would pay at home. At Paris Smiles Clinic in Antalya, we treat patients from over 30 countries — and dental implants remain our most requested procedure.
 
 But what exactly makes Turkey such a compelling destination for implant treatment? The answer lies in a combination of factors: highly trained dental specialists, state-of-the-art clinics using the same premium implant brands as UK practices, significantly lower operating costs, and a thriving tourism infrastructure that makes the whole experience comfortable and enjoyable.
 
@@ -43,7 +43,7 @@ Implants are considered the gold standard for tooth replacement because they:
 
 ## The Implant Brands We Use
 
-At Luxury Dental Turkey, we use only premium, internationally recognised implant systems. We never compromise on components. Our available systems include:
+At Paris Smiles Clinic, we use only premium, internationally recognised implant systems. We never compromise on components. Our available systems include:
 
 **Osstem®** — One of the world's most widely used implant systems, developed in South Korea and backed by extensive clinical research. Starting from £435 including abutment.
 
@@ -71,7 +71,7 @@ Once the implant has fully integrated, we take impressions (or digital scans) fo
 
 ## All-on-4: Full Arch Restoration
 
-For patients who have lost most or all of their teeth, the All-on-4 protocol offers full arch restoration using just four strategically placed implants. At Luxury Dental Turkey, we offer:
+For patients who have lost most or all of their teeth, the All-on-4 protocol offers full arch restoration using just four strategically placed implants. At Paris Smiles Clinic, we offer:
 
 - **All-on-4 Both Jaw Zirconium Porcelain (24 Unit):** £8,680
 - **All-on-4 Both Jaw Metal Fused Porcelain (24 Unit):** £7,080
@@ -112,7 +112,7 @@ Book a free online consultation with Dr. Abdullah Fida or Dr. Hatice Gül Dal. W
     body: `
 ## The Most Common Question in Cosmetic Dentistry
 
-When patients visit Luxury Dental Turkey for a smile makeover, one of the most common questions I hear is: "Should I get veneers or crowns?" It's a great question, and the answer depends entirely on the condition of your existing teeth, your aesthetic goals, and the longevity you're looking for.
+When patients visit Paris Smiles Clinic for a smile makeover, one of the most common questions I hear is: "Should I get veneers or crowns?" It's a great question, and the answer depends entirely on the condition of your existing teeth, your aesthetic goals, and the longevity you're looking for.
 
 Let's break down both treatments clearly so you can make an informed decision.
 
@@ -127,7 +127,7 @@ A veneer is a thin shell — typically 0.5 to 0.7mm thick — made from porcelai
 - Slight misalignment or gaps between teeth
 - Teeth that are naturally small or uneven
 
-**Our veneer options at Luxury Dental Turkey:**
+**Our veneer options at Paris Smiles Clinic:**
 - **E.MAX® Laminate Veneer (£240):** The premium choice. E.max is a pressed ceramic with exceptional translucency and strength, closely mimicking the appearance of natural enamel.
 - **LD Premium Non-Prep Lumineer (£300):** Ultra-thin veneers that require little to no enamel removal — a truly reversible option for suitable candidates.
 
@@ -142,7 +142,7 @@ A crown (also called a cap) is a full covering that encases the entire visible p
 - Teeth that have large existing fillings
 - Protecting a dental implant (as an implant crown)
 
-**Our crown options at Luxury Dental Turkey:**
+**Our crown options at Paris Smiles Clinic:**
 - **Zirconium Porcelain Crown / Full Veneer (£170):** Our most popular choice. Zirconia is incredibly strong, completely metal-free, and produces a beautiful, natural result.
 - **E.MAX® Crown / Full Veneer (£240):** Best for front teeth where maximum aesthetics are required. Exceptional light-transmission gives a lifelike appearance.
 - **Metal Porcelain Crown / Full Veneer (£140):** A more affordable option, still durable and functional.
@@ -159,7 +159,7 @@ A crown (also called a cap) is a full covering that encases the entire visible p
 
 ## When You Need Both
 
-In many smile makeover cases, we use a combination of veneers and crowns. For example, a patient might have six front teeth treated with E.MAX veneers for aesthetics, while two back teeth with large fillings receive zirconia crowns for protection. Every treatment plan at Luxury Dental Turkey is bespoke — we never take a one-size-fits-all approach.
+In many smile makeover cases, we use a combination of veneers and crowns. For example, a patient might have six front teeth treated with E.MAX veneers for aesthetics, while two back teeth with large fillings receive zirconia crowns for protection. Every treatment plan at Paris Smiles Clinic is bespoke — we never take a one-size-fits-all approach.
 
 ## The "Full Veneer" Crown
 
@@ -169,7 +169,7 @@ You may have noticed that in our pricing, some crowns are listed as "Crown / Ful
 
 Many patients come to us specifically for a full smile transformation — what the media calls the "Hollywood Smile." This typically involves 8–10 or even 16–20 veneers and/or crowns across the upper and lower front teeth, sometimes combined with teeth whitening and gum contouring.
 
-At Luxury Dental Turkey, we treat this as a complete design project: your new smile is digitally planned before a single tooth is touched. We use a smile design process to ensure the shape, colour, and proportions work harmoniously with your facial features.
+At Paris Smiles Clinic, we treat this as a complete design project: your new smile is digitally planned before a single tooth is touched. We use a smile design process to ensure the shape, colour, and proportions work harmoniously with your facial features.
 
 ## Making Your Decision
 
@@ -203,7 +203,7 @@ Professional teeth whitening uses hydrogen peroxide or carbamide peroxide as the
 
 The oxidation reaction breaks the chemical bonds that hold these chromophores together. As those bonds break, the molecules become smaller and their light-absorbing properties change, making them appear colourless. The result is visibly whiter, brighter teeth — from the inside out.
 
-## Laser Teeth Whitening at Luxury Dental Turkey
+## Laser Teeth Whitening at Paris Smiles Clinic
 
 Our in-clinic laser whitening treatment (£250) achieves dramatic results in a single appointment of approximately 60–90 minutes. Here is exactly what happens:
 
@@ -275,7 +275,7 @@ Let's compare real treatment costs. All UK prices are based on representative qu
 
 ### Single Dental Implant
 
-| | UK Private | Luxury Dental Turkey |
+| | UK Private | Paris Smiles Clinic |
 |---|---|---|
 | Osstem® Implant + Abutment + Zirconia Crown | ~£2,800 | £435 + £170 = £605 |
 | Nobel® Implant + Abutment + Zirconia Crown | ~£3,200 | £549 + £170 = £719 |
@@ -285,7 +285,7 @@ Let's compare real treatment costs. All UK prices are based on representative qu
 
 ### Smile Makeover (10 Veneers)
 
-| | UK Private | Luxury Dental Turkey |
+| | UK Private | Paris Smiles Clinic |
 |---|---|---|
 | E.MAX® Laminate Veneers × 10 | ~£10,000 | £2,400 |
 | Zirconium Crowns × 10 | ~£6,500 | £1,700 |
@@ -294,7 +294,7 @@ Let's compare real treatment costs. All UK prices are based on representative qu
 
 ### Full Arch Restoration (All-on-4)
 
-| | UK Private | Luxury Dental Turkey |
+| | UK Private | Paris Smiles Clinic |
 |---|---|---|
 | All-on-4 Both Jaws (Zirconium) | ~£28,000–£40,000 | £8,680 |
 
@@ -339,7 +339,7 @@ Not all dental clinics in Turkey are equal. When evaluating any clinic, look for
 - **Clear communication** — the clinic should respond promptly to questions in your language
 - **Reviews from international patients** — look for genuine, detailed testimonials
 
-At Luxury Dental Turkey, our consultants are available 7 days a week via WhatsApp to answer every question you have before you commit to travel.
+At Paris Smiles Clinic, our consultants are available 7 days a week via WhatsApp to answer every question you have before you commit to travel.
 
 ## Our Guarantee
 
