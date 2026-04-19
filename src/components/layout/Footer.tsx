@@ -76,13 +76,9 @@ export default function Footer() {
               <img
                 src="/logo parismile-01.png"
                 alt="Paris Smiles Clinic"
-                className="h-11 w-auto flex-shrink-0"
-                style={{ maxWidth: 130, filter: 'brightness(0) invert(1)' }}
+                className="h-16 w-auto flex-shrink-0"
+                style={{ maxWidth: 220, filter: 'brightness(0) invert(1)' }}
               />
-              <div className="flex flex-col leading-none">
-                <span className="font-sans font-bold text-[13px] tracking-widest text-white">PARIS SMILES</span>
-                <span className="font-sans text-[9px] tracking-[0.25em] font-semibold" style={{ color: 'var(--emerald)' }}>CLINIC</span>
-              </div>
             </div>
             <p className="text-white/50 font-sans text-sm leading-relaxed mb-6">{t.footer.tagline}</p>
             <div className="flex gap-2.5">

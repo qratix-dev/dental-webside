@@ -182,20 +182,9 @@ export default function Navbar() {
             <img
               src="/logo parismile-01.png"
               alt="Paris Smiles Clinic"
-              className="h-10 w-auto flex-shrink-0"
-              style={{ maxWidth: 120, filter: scrolled ? 'none' : 'brightness(0) invert(1)' }}
+              className="h-14 w-auto flex-shrink-0"
+              style={{ maxWidth: 200, filter: scrolled ? 'none' : 'brightness(0) invert(1)' }}
             />
-            <div className="flex flex-col leading-none">
-              <span
-                className="font-sans font-bold text-[13px] tracking-widest transition-colors duration-300"
-                style={{ color: scrolled ? 'var(--navy)' : '#FFFFFF' }}
-              >
-                PARIS SMILES
-              </span>
-              <span className="font-sans text-[9px] tracking-[0.25em] font-semibold" style={{ color: 'var(--emerald)' }}>
-                CLINIC
-              </span>
-            </div>
           </Link>
 
           {/* Desktop Nav */}
